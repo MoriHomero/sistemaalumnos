@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de alumnos</title>
+  <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+
+</head>
+<body>
+  <nav>
+    <a href="{% url 'base' %}">Inicio</a>
+    <a href="{% url 'buscar' %}">Buscar</a>
+    <a href="{% url 'formulario_alumno' %}">Alumnos</a>
+    <a href="{% url 'formulario_profesor' %}">Profesor</a>
+    <a href="{% url 'formulario_curso' %}">Curso</a>
+  </nav>
+
+  <div>
+    
+  </div>
+  
+  {% block content %}
+  {% endblock %}
+  
+  
+  <footer>
+    Sistema de alumnos
+  </footer>
+</body>
+</html>

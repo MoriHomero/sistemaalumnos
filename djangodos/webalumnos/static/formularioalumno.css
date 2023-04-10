@@ -1,0 +1,38 @@
+
+.formulario-alumno {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+  }
+  
+  .formulario-alumno label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formulario-alumno input[type="text"], .formulario-alumno select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .formulario-alumno button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-alumno button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

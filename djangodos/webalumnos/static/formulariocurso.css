@@ -1,0 +1,38 @@
+
+.formulario-curso {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+  }
+  
+  .formulario-curso label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formulario-curso input[type="text"], .formulario-curso select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .formulario-curso button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-curso button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

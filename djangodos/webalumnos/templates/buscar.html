@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static '/buscar.css' %}">
+
+  <title>Buscar</title>
+</head>
+<body>
+  
+  <h1>Búsqueda</h1>
+
+  <form method="get">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+  </form>
+  
+  {% if resultados_cursos %}
+    <h2>Resultados de cursos</h2>
+    <ul>
+      {% for curso in resultados_cursos %}
+        <li>{{ curso.nombre }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if resultados_profesores %}
+    <h2>Resultados de profesores</h2>
+    <ul>
+      {% for profesor in resultados_profesores %}
+        <li>{{ profesor.nombre }} {{ profesor.apellidos }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if resultados_alumnos %}
+    <h2>Resultados de alumnos</h2>
+    <ul>
+      {% for alumno in resultados_alumnos %}
+        <li>{{ alumno.nombre }} {{ alumno.apellidos }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+
+</body>
+</html>
+
